@@ -20,14 +20,11 @@ Alur kerja mencakup pemeriksaan data, pemeriksaan kualitas data, Exploratory Dat
 
 ### 1. EDA: Distribusi target
 
-Tambahkan grafik yang jelas untuk menunjukkan distribusi nasabah non-default dan default. Grafik ini membantu pembaca memahami komposisi kelas target.
 
 <!-- Simpan grafik dari notebook sebagai images/target-distribution.png -->
 ![Distribusi target](Hasil_Model/EDA.png)
 
 ### 2. Evaluasi model: Confusion matrix
-
-Ini merupakan salah satu visual terpenting dalam proyek ini. Sebaiknya, letakkan confusion matrix Random Forest dan XGBoost berdampingan dalam satu gambar agar perekrut dapat membandingkan false negative dan false positive dengan cepat.
 
 <!-- Simpan gambar gabungan sebagai images/confusion-matrix-comparison.png -->
 
@@ -38,8 +35,6 @@ Ini merupakan salah satu visual terpenting dalam proyek ini. Sebaiknya, letakkan
 
 
 ### 3. Evaluasi model: ROC curve
-
-Gunakan satu grafik yang menampilkan ROC curve dari kedua model final yang dievaluasi pada test set yang sama. Sertakan nilai ROC-AUC setiap model pada legenda.
 
 <!-- Simpan grafik gabungan sebagai images/roc-curve-comparison.png -->
 <p align="center">

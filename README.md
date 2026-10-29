@@ -23,28 +23,40 @@ Alur kerja mencakup pemeriksaan data, pemeriksaan kualitas data, Exploratory Dat
 Tambahkan grafik yang jelas untuk menunjukkan distribusi nasabah non-default dan default. Grafik ini membantu pembaca memahami komposisi kelas target.
 
 <!-- Simpan grafik dari notebook sebagai images/target-distribution.png -->
-![Distribusi target](images/target-distribution.png)
+![Distribusi target](Hasil_Model/EDA.png)
 
 ### 2. Evaluasi model: Confusion matrix
 
 Ini merupakan salah satu visual terpenting dalam proyek ini. Sebaiknya, letakkan confusion matrix Random Forest dan XGBoost berdampingan dalam satu gambar agar perekrut dapat membandingkan false negative dan false positive dengan cepat.
 
 <!-- Simpan gambar gabungan sebagai images/confusion-matrix-comparison.png -->
-![Confusion matrix Random Forest vs. XGBoost](images/confusion-matrix-comparison.png)
+
+<p align="center">
+  <img src="Hasil_Model/confusion_matrix_RM.png" width="48%" alt="Random Forest">
+  <img src="Hasil_Model/confusion_matrix_XGBoost.png" width="48%" alt="XGBoost">
+</p>
+
 
 ### 3. Evaluasi model: ROC curve
 
 Gunakan satu grafik yang menampilkan ROC curve dari kedua model final yang dievaluasi pada test set yang sama. Sertakan nilai ROC-AUC setiap model pada legenda.
 
 <!-- Simpan grafik gabungan sebagai images/roc-curve-comparison.png -->
-![ROC curve Random Forest vs. XGBoost](images/roc-curve-comparison.png)
+<p align="center">
+  <img src="Hasil_Model/kurva_roc_RM.png" width="48%" alt="Random Forest">
+  <img src="Hasil_Model/kurva_roc_XGBoost.png" width="48%" alt="XGBoost">
+</p>
+
 
 ### 4. Interpretasi model: Feature importance
 
 Grafik gabungan fitur teratas dari kedua model mendukung temuan bahwa variabel status pembayaran merupakan prediktor penting dalam model yang telah dilatih.
 
 <!-- Simpan grafik gabungan sebagai images/feature-importance-comparison.png -->
-![Feature importance Random Forest vs. XGBoost](images/feature-importance-comparison.png)
+<p align="center">
+  <img src="Hasil_Model/feature_importance_RM.png" width="48%" alt="Random Forest">
+  <img src="Hasil_Model/feature_importance_XGBoost.png" width="48%" alt="XGBoost">
+</p>
 
 > **Sebelum dipublikasikan:** Tautan gambar ini masih berupa placeholder. Buat folder `images/` dan unggah file dengan nama yang sama seperti di atas, atau ubah path Markdown agar sesuai dengan nama file Anda. Jangan biarkan tautan gambar rusak pada README yang dipublikasikan.
 
